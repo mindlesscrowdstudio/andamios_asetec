@@ -163,7 +163,7 @@ section video{
 }
 .inner{
   margin: 0px auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 .wrapper{
     padding: 0px 10px;
@@ -565,3 +565,30 @@ section video{
 	background-color: transparent;
 	border-color: #00B259;
 }
+
+/*	PROYECTOS */
+.wrapperTabs{
+	font-size: 0px;
+	display:inline-block;
+}
+
+.tab{
+	max-width: 165px;
+	color:#807F83;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 20px;
+	display:inline-block;
+	border:1px solid #807F83;
+}
+
+.tab a{
+	
+	line-height: 19px;
+	text-decoration: none;
+	color:#807F83;	
+}
+
+
+
+
