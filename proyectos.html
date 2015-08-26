@@ -47,23 +47,93 @@
       </nav>
     </div><!--container clearfix-->
   </header><!--header-->
-  <div class="main-container">
-    <div class="iner">
+  <div id="proyectos" class="main-container">
+    <div class="inner">
       <article class="intro">
         <h1>Proyectos</h1>
 
       <div class="wrapperTabs">
-        <div class="tab" data-tab="1">
+        <div class="tab tabActive" data-tab="1">
           <a  href="">Espectáculos</a>
         </div>
-         <div class="tab" data-tab="1">
+         <div class="tab" data-tab="2">
           <a href="">Construcción</a>
         </div>
-         <div class="tab" data-tab="1">
+         <div class="tab" data-tab="3">
           <a href="">Mantenimiento</a>
         </div>
-         <div class="tab" data-tab="1">
+         <div class="tab" data-tab="4">
           <a href="">Eventos Sociales</a>
+        </div>
+        <div class="wrapperContentTab">
+          <!--ESPECTACULOS-->
+          <div class="contentTab projectActive atributo1" data-proyecto="1">
+            <div class="wrapperProject">
+              <figure>
+                <img src="statics/img/portafolio/Espectaculos/ES_P1/thumbs/01.jpg" alt="">
+                <div><span></span></div>
+              </figure>
+            </div>
+            <div class="wrapperProject">
+              <figure>
+                <img src="statics/img/portafolio/Espectaculos/ES_P1/thumbs/01.jpg" alt="">
+                <div><span></span></div>
+              </figure>
+            </div>
+            <div class="wrapperProject">
+              <figure>
+                <img src="statics/img/portafolio/Espectaculos/ES_P1/thumbs/01.jpg" alt="">
+                <div><span></span></div>
+              </figure>
+            </div>
+             <div class="wrapperProject">
+              <figure>
+                <img src="statics/img/portafolio/Espectaculos/ES_P1/thumbs/01.jpg" alt="">
+                <div><span></span></div>
+              </figure>
+            </div>
+               <div class="wrapperProject">
+              <figure>
+                <img src="statics/img/portafolio/Espectaculos/ES_P1/thumbs/01.jpg" alt="">
+                <div><span></span></div>
+              </figure>
+            </div>
+               <div class="wrapperProject">
+              <figure>
+                <img src="statics/img/portafolio/Espectaculos/ES_P1/thumbs/01.jpg" alt="">
+                <div><span></span></div>
+              </figure>
+            </div>
+          </div>
+          <!--CONSTRUCCION-->
+          <div class="contentTab atributo2">
+                <h2>construccion</h2>
+            <div class="wrapperProject">
+          
+              <figure>
+                <img src="  " alt="">
+                <div><span></span></div>
+              </figure>
+            </div>
+          </div>
+          <div class="contentTab atributo3">
+            <h2>mantenimiento</h2>
+            <div class="wrapperProject">
+              <figure>
+                <img src="  " alt="">
+                <div><span></span></div>
+              </figure>
+            </div>
+          </div>
+          <div class="contentTab atributo4">
+            <h2>eventos sociales</h2>
+            <div class="wrapperProject">
+              <figure>
+                <img src="" alt="">
+                <div><span></span></div>
+              </figure>
+            </div>
+          </div>
         </div>
     </div>
     </article>
@@ -135,7 +205,7 @@
   var update = function (){
     stats.begin();
     // monitored code goes here
-      console.log("jalando");
+     // console.log("jalando");
     stats.end();
     requestAnimationFrame(update);
   };
