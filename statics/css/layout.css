@@ -223,13 +223,25 @@ section video{
 	padding: 0px 50px;
 }
 .alcance{
-	background: #282828 none repeat scroll 0% 0%;
-	padding: 38px 50px;
+	
 	font-size: 30px;
 	line-height: 3;
 }
-
-
+.wrapperValores{
+	
+	height: 168px;
+	overflow:scroll;
+	float:left;
+	background: #282828 none repeat scroll 0% 0%;
+	padding: 38px 50px;
+	box-sizing: border-box;
+}
+.contenedorValores{
+	display:none;
+}
+.valorActive{
+	display:block;
+}
 /* ==============
        SERVICIOS
       ============== */
@@ -606,7 +618,6 @@ section video{
 	margin-top: 100px;
 }
 .wrapperContentTab .wrapperProject{
-
 	display: inline-block;
 	box-sizing: border-box;
 	position: relative;
@@ -618,10 +629,40 @@ section video{
 .wrapperProject img{
 	width:100%;
 }
+.wrapperProject:hover .overCaption{
+	top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    visibility: visible;
+    background-color: rgba(58,52,42,0.4);
+}
+.overCaption{
+	-webkit-transition: all .4s ease-out;
+	-moz-transition: all .4s ease-out;
+	-ms-transition: all .4s ease-out;
+	-o-transition: all .4s ease-out;
+	transition: all .4s ease-out;
+	visibility: hidden;
+	top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+	padding: 20px 10px;
+	border: 1px solid #fff;
+	color:#fff;
+	font-size: 10px;
+	position: absolute;
+	
+}
 
-
-
-
+.overCaption *{
+	color:#fff;
+	font-size: 14px;
+}
+.overCaption h4{
+	font-size: 16px;
+}
 
 
 
