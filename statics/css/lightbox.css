@@ -1,0 +1,40 @@
+.lightboxContent{
+	display: block;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	height:100%;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.5);
+	visibility: visible;
+
+}
+.wrapperLight{
+	margin: 0 auto;
+	max-width: 960px;
+	width:100%;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.noWeight{visibility: hidden;
+	position: absolute;
+	z-index:-100;
+}
+.weight{
+	display:block!important;
+	position:fixed;
+	visibility: visible;
+	z-index: 1000;
+}
+.wrapperFlex{
+	position: absolute;
+	visibility: hidden;
+}
+.openGallery{
+	position:relative;
+	visibility: visible;
+}

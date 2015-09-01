@@ -624,7 +624,8 @@ section video{
 	width: 32%;
 	margin: 7px;
 	overflow:hidden;
-	vertical-align: top
+	vertical-align: top;
+	cursor: pointer;
 }
 .wrapperProject img{
 	width:100%;

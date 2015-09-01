@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="statics/css/normalize.min.css">
     <link rel="stylesheet" href="statics/css/flexslider.css">
     <link rel="stylesheet"  media="screen" href="statics/css/libreria.css" media="screen">
+     <link rel="stylesheet"  media="screen" href="statics/css/lightbox.css" media="screen">
     <link href='https://raw.githubusercontent.com/adobe-webplatform/Snap.svg/master/dist/snap.svg.js'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -47,6 +48,29 @@
       </nav>
     </div><!--container clearfix-->
   </header><!--header-->
+  <div class="lightboxContent noWeight">
+    <div class="wrapperLight">
+      <div class="wrapperBtn"><a href="#" class="btnCerrar">cerrar</a></div>
+      <div class="wrapperFlex galeria1" data-galeria="1">
+          <h5>01</h5>
+        <div class="flexslider">
+          <ul class="slides">
+            <li><img src="statics/img/portafolio/Construccion/CN_P1/pm01.jpg" alt=""></li>
+            <li><img src="statics/img/portafolio/Construccion/CN_P1/pm02.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+          <div class="wrapperFlex galeria2" data-galeria="2">
+            <h5>02</h5>
+        <div class="flexslider">
+          <ul class="slides">
+            <li><img src="statics/img/portafolio/Construccion/CN_P1/pm01.jpg" alt=""></li>
+            <li><img src="statics/img/portafolio/Construccion/CN_P1/pm02.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="proyectos" class="main-container">
     <div class="inner">
       <article class="intro">
@@ -68,7 +92,7 @@
         <div class="wrapperContentTab">
           <!--ESPECTACULOS-->
           <div class="contentTab projectActive atributo1" data-proyecto="1">
-            <div class="wrapperProject">
+            <div class="wrapperProject triggerLightbox" data-proyecto="1">
               <figure>
                 <img src="statics/img/portafolio/Espectaculos/ES_P1/thumbs/01.jpg" alt="">
                 <div class="overCaption">
@@ -80,7 +104,7 @@
                 </div>
               </figure>
             </div>
-            <div class="wrapperProject">
+            <div class="wrapperProject triggerLightbox" data-proyecto="2">
               <figure>
                 <img src="statics/img/portafolio/Espectaculos/ES_P1/thumbs/01.jpg" alt="">
                   <div class="overCaption">
@@ -92,7 +116,7 @@
                 </div>
               </figure>
             </div>
-            <div class="wrapperProject">
+            <div class="wrapperProject triggerLightbox" >
               <figure>
                 <img src="statics/img/portafolio/Espectaculos/ES_P1/thumbs/01.jpg" alt="">
                  <div class="overCaption">

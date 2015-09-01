@@ -1,6 +1,12 @@
 
  
  $( document ).ready(function() {
+ 		//GALERIA
+ 	  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+
+
     //TABS PROYECTOS
      $('.wrapperTabs .tab').on('click', function(event) {
      	//prevengo accion 
@@ -26,4 +32,19 @@
      	$('.wrapperValores .contenedorValores').removeClass('valorActive');
      	$('.wrapperValores .valor' + queValor).addClass('valorActive');
      });
-});
+
+     //lightbox
+     $('.triggerLightbox').on('click',function(event){
+     	var dataProyecto = $(this).data('proyecto');
+     	console.log("es proyecto "+ dataProyecto);
+     	$('.lightboxContent').removeClass('noWeight').addClass('weight');
+     	$('.wrapperLight .galeria'+ dataProyecto).addClass('openGallery');
+     });
+
+    	$('.lightboxContent .wrapperBtn a').on('click',function(event){
+    		$('.lightboxContent').removeClass('weight').addClass('noWeight');
+    			$('.wrapperFlex').removeClass('openGallery');
+    	  $('.lightboxContent').fadeOut();
+     }); 
+
+});//cierrra document ready
