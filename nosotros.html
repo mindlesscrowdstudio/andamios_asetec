@@ -33,14 +33,16 @@
         <div class="container clearfix">
           <h1 id="logotipo">
             <figure>
+               <a href="index.html">
               <img src="statics/img/logo_andamios.svg" alt="logotipo asetec">
+              </a>
             </figure>
           </h1>
           <nav>
-            <a href="#">nosotros</a>
-            <a href="#">servicios</a>
-            <a href="#">proyectos</a>
-            <a href="#">contacto</a>
+            <a href="nosotros.html">nosotros</a>
+            <a href="servicios.html">servicios</a>
+            <a href="proyectos.html">proyectos</a>
+            <a href="contacto.html">contacto</a>
           </nav>
         </div><!--container clearfix-->
       </header><!--header-->
@@ -74,16 +76,25 @@
               <h3> Nuestros valores </h3>
               <div id="valores-wrap" class="clearfix">
                 <div id="valores-nav" class="valores-navigation">
-                  <span rel="calidad" class="active">calidad</span>
-                  <span rel="experiencia">experiencia</span>
-                  <span rel="seguridad">seguridad</span>
-                  <span rel="colaboración">colaboración</span>
+                  <span data-rel="1" class="titleValores active">calidad</span>
+                  <span data-rel="2" class="titleValores">experiencia</span>
+                  <span data-rel="3" class="titleValores">seguridad</span>
+                  <span data-rel="4" class="titleValores">colaboración</span>
                 </div>
               </div><!--valores-wrap-->
 
-              <div id="alcances" class="values" style="height:168px;">
-                <div class="alcance calidad active">
+              <div class="wrapperValores">
+                <div class="contenedorValores valorActive valor1">
                   Nos sentimos orgullosos de realizar proyectos de calidad, respondiendo a las necesidades de nuestros clientes.
+                </div>
+                <div class="contenedorValores valor2">
+                  EXPERIENCIA
+                </div>
+                <div class="contenedorValores valor3">
+                  SEGURIDAD
+                </div>
+                <div class="contenedorValores valor4">
+                COLABORACION
                 </div>
               </div>
             </div><!--wrapper-valores-asetec-->
@@ -136,12 +147,12 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
-        <script src="js/main.js"></script>
-		    <script src="js/classie.js"></script>
-        <script src="./particles.js"></script>
-        <script src="js/app.js"></script>
+        <script src="statics/js/main.js"></script>
+		    <script src="statics/js/classie.js"></script>
+        <script src=".statics//particles.js"></script>
+        <script src="statics/js/app.js"></script>
         <!-- stats.js -->
-        <script src="js/lib/stats.js"></script>
+        <script src="statics/js/lib/stats.js"></script>
         <script>
           var stats = new Stats();
           stats.setMode(0); // 0: fps, 1: ms
@@ -152,7 +163,7 @@
           var update = function (){
             stats.begin();
             // monitored code goes here
-              console.log("oli");
+             // console.log("oli");
             stats.end();
             requestAnimationFrame(update);
           };

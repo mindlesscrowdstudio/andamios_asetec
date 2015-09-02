@@ -176,7 +176,8 @@ video{
 .inner{
   margin: 0px auto;
   width: 100%;
-	max-width: 1200px;
+  max-width: 1200px;
+ 
 }
 .wrapper{
     padding: 0px 10px;
@@ -241,13 +242,25 @@ video{
 	padding: 0px 50px;
 }
 .alcance{
-	background: #282828 none repeat scroll 0% 0%;
-	padding: 38px 50px;
+	
 	font-size: 30px;
 	line-height: 3;
 }
-
-
+.wrapperValores{
+	
+	height: 168px;
+	overflow:scroll;
+	float:left;
+	background: #282828 none repeat scroll 0% 0%;
+	padding: 38px 50px;
+	box-sizing: border-box;
+}
+.contenedorValores{
+	display:none;
+}
+.valorActive{
+	display:block;
+}
 /* ==============
        SERVICIOS
       ============== */
@@ -555,3 +568,96 @@ label {
 		}
 	}
 	)
+
+
+/*	PROYECTOS */
+#proyectos .intro{
+	padding-right: 0;
+	width:100%;
+	margin:140px auto 0 auto;
+}
+.wrapperTabs{
+	margin-bottom: 100px;
+	font-size: 0px;
+	
+}
+
+.tab{
+	max-width: 165px;
+	color:#807F83;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 20px;
+	display:inline-block;
+	border:1px solid #807F83;
+}
+.tabActive{
+	border:2px solid #00B259;
+}
+.contentTab{
+	display:none;
+}
+.projectActive{
+	display:block;
+}
+.tab a{
+	
+	line-height: 19px;
+	text-decoration: none;
+	color:#807F83;	
+}
+.wrapperContentTab{
+	margin-top: 100px;
+}
+.wrapperContentTab .wrapperProject{
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	width: 32%;
+	margin: 7px;
+	overflow:hidden;
+	vertical-align: top;
+	cursor: pointer;
+}
+.wrapperProject img{
+	width:100%;
+}
+.wrapperProject:hover .overCaption{
+	top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    visibility: visible;
+    background-color: rgba(58,52,42,0.4);
+}
+.overCaption{
+	-webkit-transition: all .4s ease-out;
+	-moz-transition: all .4s ease-out;
+	-ms-transition: all .4s ease-out;
+	-o-transition: all .4s ease-out;
+	transition: all .4s ease-out;
+	visibility: hidden;
+	top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+	padding: 20px 10px;
+	border: 1px solid #fff;
+	color:#fff;
+	font-size: 10px;
+	position: absolute;
+	
+}
+
+.overCaption *{
+	color:#fff;
+	font-size: 14px;
+}
+.overCaption h4{
+	font-size: 16px;
+}
+
+
+
+
+
