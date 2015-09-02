@@ -134,6 +134,18 @@ section video{
   display:block;
   margin:0 auto;
 }
+video{
+	width: 100%;
+	height: auto;
+	width:100%;
+ 	max-width:960px;
+
+}
+
+.inner-video{
+	width: 100%;
+	margin: 0 auto;
+}
 
 #video.wide.nomerg{
 	margin: 0px;
@@ -144,7 +156,7 @@ section video{
 }
 
 #videoDiv{
-  margin-bottom:100px;
+  margin-bottom:20%;
 }
 
 
@@ -163,7 +175,8 @@ section video{
 }
 .inner{
   margin: 0px auto;
-  width: 1200px;
+  width: 100%;
+	max-width: 1200px;
 }
 .wrapper{
     padding: 0px 10px;
@@ -217,7 +230,12 @@ section video{
   float: left;
   padding-right: 50px;
 }
-
+#alcances{
+	width: 776px;
+	float: left;
+	margin-right: 128px;
+	margin-bottom: 100px;
+}
 #alcances.values .alcance{
 	background: transparent none repeat scroll 0% 0%;
 	padding: 0px 50px;
@@ -367,7 +385,7 @@ section video{
 }
 #contacto_data.informacion{
 	width: 100%;
-	padding-bottom: 0px;
+	max-width: 1200px;
 }
 #contacto_data.informacion.nomerg{
 	margin: 0px;
@@ -401,11 +419,14 @@ section video{
 	line-height:3;
 	text-decoration: none;
 }
+ a[href^="tel:"]:before {
+		content: '';
+}
 .contacto_data_right{
 	width: 70%;
 }
 .contacto_data_right #wrapper-form{
-	padding: 3.1em;
+	padding: 1em;
 	background-color:rgb(240,240,240);
 }
 .contacto_data_right #wrapper-form h3{
@@ -416,152 +437,121 @@ section video{
 	line-height: 1.5;
 }
 .contacto_data_left figure{
-	/*width: 590px;*/
 	height: auto;
 }
 .contacto_data_left figure img{
-	width: 100%;
-	height: auto;
+	width: auto;
+	max-width: 100%;
 }
 
-
-
-/*.contacto_data_right #wrapper-form form{
-  position: relative;
-  display: inline-block;
-  clear: both;
-	border: 1px solid green;
-}*/
-
-.form{
+form{
 	max-width: 100%;
+	width: auto;
 	min-width: 50%;
 	border: none;
 	color:#807F83;
 	font-size: 1em;
-	margin: 50px;
-	background-color: #ffffff;
-	padding: 2em;
 }
 
-
-.input {
+fieldset{
+	padding-bottom:1.7em;
+}
+input , textarea{
 	position: relative;
-	z-index: 1;
-	display: inline-block;
-	margin: 1em;
-	max-width: 250px;
-	width: calc(100% - 2em);
-	vertical-align: top;
-}
-
-.input__field {
-	position: relative;
-	display: block;
-	float: left;
-	padding: 0.8em;
-	width: 60%;
-	border: none;
-	border-radius: 0;
-	background: #f0f0f0;
-	color:#807F83;
-	font-weight: 300;
-	font-family: sans-serif;
-	-webkit-appearance: none; /* for box shadows to show on iOS */
-}
-
-.input__field:focus {
 	outline: none;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+	border: 2px solid #00B259;
+	background-color: rgba(254, 255, 254, 0.77);
+}
+textarea{
+	height: auto;
 }
 
-.input__label {
+input[placeholder], textarea[placeholder]{
+	padding-left: 1em;
+	font-family: BankGothicBT-Medium;
+	font-size: 14px;
 	color: #807F83;
-	display: inline-block;
-	float:left;
+	letter-spacing: 1px;
+	line-height: 14px;
+}
+
+input:focus {
+	outline: none;
+
+}
+textarea{
+	outline: none;
+	overflow: auto;
+}
+
+label {
+	color: #807F83;
+	display: block;
 	font-family:'BankGothicBT-Medium';
-	font-weight: bold;
-	font-size: 70.25%;
+	font-weight: 500;
+	font-size: 1em;
 	letter-spacing: 1px;
 	padding: 0 1em;
 	text-transform:uppercase;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	width: 40%;
-}
-.input__field--yoshiko{
-	width: 100%;
-	background-color:none;
-	border: 2px solid #00B259;
-	-webkit-transition: background-color 0.25s, border-color 0.25s;
-	transition: background-color 0.25s, border-color 0.25s;
-}
-.input .input__field--yoshiko #submit{
-	width: 100%;
-	background-color: #00B259;
-	-webkit-transition: background-color 0.25s, border-color 0.25s;
-	transition: background-color 0.25s, border-color 0.25s;
-}
-.input__label--yoshiko {
-	width: 100%;
-	text-align: left;
-	position: absolute;
-	bottom: 100%;
-	pointer-events: none;
-	overflow: hidden;
-	padding: 0 1.25em;
-	-webkit-transform: translate3d(0, 3em, 0);
-	transform: translate3d(0, 3em, 0);
-	-webkit-transition: -webkit-transform 0.25s;
-	transition: transform 0.25s ;
-	-webkit-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
+	width:60%;
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+	align-content: center;
 }
 
-.input__label-content--yoshiko {
-	color: #807F83;
-	padding: 0.25em 0;
-	-webkit-transition: -webkit-transform 0.25s;
-	transition: transform 0.25s;
-	-webkit-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
-}
-
-.input__label-content--yoshiko::after {
-	/*box-sizing: border-box;*/
-	content: attr(data-content);
-	position: absolute;
-	font-weight: 800;
-	bottom: 100%;
-	left: 1em;
-	height: 40%;
-	width: 100%;
-	color: #00B259;
-	padding: 0.25em 0;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 0.85em;
-}
-
-.input__field--yoshiko:focus + .input__label--yoshiko,
-.input--filled .input__label--yoshiko {
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
-
-.input__field--yoshiko:focus + .input__label--yoshiko .input__label-content--yoshiko,
-.input--filled .input__label-content--yoshiko {
-	-webkit-transform: translate3d(0, 100%, 0);
-	transform: translate3d(0, 100%, 0);
-}
-
-.input__field--yoshiko:focus + .input__field--yoshiko,
-.input--filled .input__field--yoshiko {
+.button_submit{
+	font-family:'BankGothicBT-Medium';
+	font-size: 1em;
+	color: #646569;
+	line-height: 16px;
+	border: 2px solid #646569;
 	background-color: transparent;
-	border-color: #00B259;
 }
+.button_submit:hover{
+	color: #00B259;
+	border: 2px solid #00B259;
+
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/*MENU MEDIA QUERIES*/
+
+/* ==============
+       CONTACTO
+      ============== */
+
+	@media all and (max-width:768px){
+		.intro{
+			margin: 2em 0px 56px 15%;;
+		}
+
+
+	}
+	@media all and (max-width:477px){
+		.contacto_data_left{
+			float:none;
+			margin: 0px auto;
+			width:100%;
+		}
+		.contacto_data_right {
+    width: 100%;
+		}
+		input, textarea{
+			width: 80%;
+		}
+	}
+	@media (min-width:768px)and(max-width:955px) {
+		.contacto_data_left > address a{
+			font-size: 12px;
+			color:red;
+		}
+	}
+	)
