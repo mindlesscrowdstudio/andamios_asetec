@@ -1,23 +1,24 @@
 
- 
- $( document ).ready(function() {
- 		//GALERIA
- 	  $('.flexslider').flexslider({
-    animation: "slide"
-  });
 
+ $( document ).ready(function() {
+
+   //GALERIA
+    $('.flexslider').flexslider({
+   animation: "slide"
+
+  });
 
     //TABS PROYECTOS
      $('.wrapperTabs .tab').on('click', function(event) {
-     	//prevengo accion 
+     	//prevengo accion
         event.preventDefault();
-        //REMUEVO CLASE POR SI YA FUE CLICKEADO 
+        //REMUEVO CLASE POR SI YA FUE CLICKEADO
         $('.wrapperTabs .tab').removeClass('tabActive');
         //AGREGO CLASE A ESTE EN PARTICULAR
         $(this).addClass('tabActive');
-        //RECUEPERO VALOR DE DATA 
+        //RECUEPERO VALOR DE DATA
         var cual = $(this).data('tab');
-        //REMUEVO CLASE POR SI YA SE MOSTRO 
+        //REMUEVO CLASE POR SI YA SE MOSTRO
         $('.wrapperContentTab  .contentTab').removeClass('projectActive');
         //PASO MI DATA PARA SABER CUAL MOSTRAR
         $('.wrapperContentTab .atributo' + cual).addClass('projectActive');
@@ -45,6 +46,8 @@
     		$('.lightboxContent').removeClass('weight').addClass('noWeight');
     			$('.wrapperFlex').removeClass('openGallery');
     	  $('.lightboxContent').fadeOut();
-     }); 
+     });
+
+
 
 });//cierrra document ready

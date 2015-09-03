@@ -13,13 +13,13 @@
 
         <link rel="stylesheet" href="statics/css/normalize.min.css">
         <link rel="stylesheet"  media="screen" href="statics/css/libreria.css">
+        <link rel="stylesheet" href="statics/css/flexslider.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
         <link rel="stylesheet"  media="screen" href="statics/css/layout.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="statics/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
     </head>
 
@@ -94,7 +94,7 @@
                   SEGURIDAD
                 </div>
                 <div class="contenedorValores valor4">
-                COLABORACION
+                COLABORACION laralarala
                 </div>
               </div>
             </div><!--wrapper-valores-asetec-->
@@ -145,9 +145,12 @@
         </div> <!-- #main container -->
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
         <script src="statics/js/main.js"></script>
+        <script src="statics/js/jquery.flexslider.js"></script>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
 		    <script src="statics/js/classie.js"></script>
         <script src=".statics//particles.js"></script>
         <script src="statics/js/app.js"></script>
@@ -169,7 +172,14 @@
           };
           requestAnimationFrame(update);
         </script>
-
+        <!--flexslider-->
+        <script>
+         $(window).load(function() {
+           $('.flexslider').flexslider({
+           animation: "slide"
+           });
+         });
+       </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -179,7 +189,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','andamios asetec','auto');ga('send','pageview');
         </script>
-        <script>
+        <!--<script>
 	        (function() {
 				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 				if (!String.prototype.trim) {
@@ -213,6 +223,6 @@
 					}
 				}
 			})();
-        </script>
+    </script>-->
     </body>
 </html>
