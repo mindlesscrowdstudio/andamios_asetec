@@ -1,12 +1,17 @@
+// variables
+//FUNCIONES
+
 
 
  $( document ).ready(function() {
 
-   //GALERIA
-    $('.flexslider').flexslider({
-   animation: "slide"
+  var anchoDiv = $('.galeria1').width();
 
+ 		//GALERIA
+ 	  $('.flexslider').flexslider({
+    animation: "slide"
   });
+
 
     //TABS PROYECTOS
      $('.wrapperTabs .tab').on('click', function(event) {
@@ -37,9 +42,16 @@
      //lightbox
      $('.triggerLightbox').on('click',function(event){
      	var dataProyecto = $(this).data('proyecto');
-     	console.log("es proyecto "+ dataProyecto);
+     	//console.log("es proyecto "+ dataProyecto);
      	$('.lightboxContent').removeClass('noWeight').addClass('weight');
-     	$('.wrapperLight .galeria'+ dataProyecto).addClass('openGallery');
+      /*funciona para cargarlo con otro html solo en firefox xq se ejecuta del lado del server
+        firefox es el unico navegador que nos deja hacer este tipo de cosas sin tener un server :)
+        con los includes si va funcionar ya cuando este en el ambiente de pruebas.
+      */
+      //$('#loader').load("galerias/galeria1.html #galeria1");
+        $('.wrapperLight .galeria'+ dataProyecto).addClass('openGallery');
+
+
      });
 
     	$('.lightboxContent .wrapperBtn a').on('click',function(event){
