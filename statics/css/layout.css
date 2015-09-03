@@ -567,15 +567,15 @@ label {
 			color:red;
 		}
 	}
-	)
 
 
 /*	PROYECTOS */
-#proyectos .intro{
+#proyectos  .intro{
 	padding-right: 0;
 	width:100%;
 	margin:140px auto 0 auto;
 }
+
 .wrapperTabs{
 	margin-bottom: 100px;
 	font-size: 0px;
