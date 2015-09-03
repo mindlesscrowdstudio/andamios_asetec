@@ -57,26 +57,39 @@
                 Ponte en contacto con nosotros
                 </h3>
                 <address>
-                  Tels.
-                  <a href="tel:55 5590 6929 |
-                  55 5590 6849"
-                  55 5590 6929
-                  </a>
-                  <a href=""
-
+                  Tel.
+                  <a href="tel:5555906849">55 5590-6849</a>
+                  |
+                  <a href="tel: 5555906929">55 5590-6929</a>
                   <a href="mailto:contacto@andamiosasetec.com" title="Agenda una visita aquí">contacto@andamiosasetec.com</a><br/>
                 </address>
                 <figure>
-                  <img src="statics/img/contact/mug.jpg" alt="tomemos un café">
+                  <img src="statics/img/contact/contacto_cafe.jpg" alt="trabajemos juntos">
                 </figure>
               </section>
               <section class="contacto_data_right post">
                 <div id="wrapper-form">
-                  <h3>Déjanos ayudarte</h3>
-                  <form id="form" class="form" method="post" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on">
+                  <h3>¿Algún proyecto en mente? <br/> Déjanos ayudarte</h3>
+                  <form id="form"  method="post" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on">
+                    <fieldset>
+                      <label for="nombre">Nombre: </label>
+                      <input id="nombre" name="nombre" autofocus type="text" placeholder="Nombre" required="required" tabindex="1"/>
 
+                      <label for="apellido">Apellido: </label>
+                      <input id="apellido" name="apellido" autofocus type="text" placeholder="Apellido" tabindex="2"/>
+                    </fielset>
+                    <fieldset>
+                      <label for="mail">Correo: </label>
+                      <input id="mail" name="mail" type="email" value="" placeholder="mail@tucorreo.com" required="required" tabindex="3" />
 
-
+                      <label for="telefono">Telefono: </label>
+                      <input type="tel" id="telefono" name="telefono" value="" tabindex="4" placeholder="Teléfono"/>
+                    </fieldset>
+                    <fieldset>
+                      <label for="mensaje">Comentarios: </label>
+                      <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje" required="required" data-minlength="10" rows="6" cols="50" tabindex="5" ></textarea>
+                    </fieldset>
+                    <input type="submit" value="Enviar" id="submit-button" class="button_submit" />
                   </form>
                 </div>
               </section>
