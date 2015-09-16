@@ -521,7 +521,7 @@ label {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-/*MENU MEDIA QUERIES*/
+/*MEDIA QUERIES*/
 
 /* ==============
        CONTACTO
@@ -645,12 +645,8 @@ label {
 /* ==============
       nosotros
       ============== */
-@media all and (max-width:768px){
-	.contenedorValores{
-		font-size: 1.2em;
-		line-height: 1.5em;
-		overflow: visible;
-	}
+@media all and
+		(max-width:768px){
 	.wrapper h3{
 		font-size: 24px;
 		line-height: 34px;
@@ -658,37 +654,72 @@ label {
 		-moz-text-shadow: 2px 1px 5px #000;
 		-webkit-text-shadow: 2px 1px 5px #000;
 }
+	#valores-nav{
+		padding-right: 20px;
 	}
-	.wrapperValores{
-		padding: 15px 50px;
-		overflow: hidden;
+		.wrapperValores{
+		padding: 15px 20px;
+		overflow: auto;
+	}
+	.contenedorValores{
+		font-size: 1em;
+		line-height: 1.5em;
+		overflow: visible;
+
 	}
 }
-@media all and (max-width:600px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
 	#valores-nav{
 		float: none;
+		clear: both;
+    width: 100%;
+	}
+	#valores-nav span{
 		text-align: center;
-		width: auto;
+		font-size: 1em;
+		float: none;
+	}
+	#valores-nav.valores-navigation::after{
+		content: '';
+		display: block;
+		width: 2px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.wrapperValores{
+		padding: 2.5em 15%;
+    overflow: visible;
+    font-size: 1.2em;
+    text-align: center;
+	}
+}
+
+
+/*@media all and
+	(min-device-width:320px)
+	(max-device-width:600px){
+	#valores-nav{
+		text-align: center;
+		padding-right: 1em;
+	}
+	#valores-nav span{
+		float: none;
+	}
+
+	#valores-nav.valores-navigation::after{
+		content: '';
+		display: block;
+		width: 1px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 	.contenedorValores{
 		padding-top: 1.5em;
 		text-align: start;
 	}
-	#valores-nav span{
-		float: none;
-	}
-	.wrapperValores{
-		overflow: visible;
-	}
-
-	#valores-nav.valores-navigation::after{
-		content: '';
-    display: block;
-    width: 1px;
-    height: 100%;
-    /*background: red none repeat scroll 0% 0%;*/
-    position: absolute;
-    top: 0;
-    right: 0;
-	}
-}
+}*/
